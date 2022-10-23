@@ -1,6 +1,6 @@
 baseURL: https://nickybu.blog
-languageCode: en-us
-title: My New Hugo Site
+languageCode: en-uk
+title: nickybu
 theme: "PaperMod"
 paginate: 5
 
@@ -9,17 +9,15 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  title: nickybu's blog
+  description: "A personal blog belonging to Nicky Buttigieg"
+  keywords: [Blog, nickybu, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -31,7 +29,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -53,7 +51,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Nicky Buttigieg"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -108,9 +106,9 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: bookshelf
+      name: bookshelf
+      url: /bookshelf/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
