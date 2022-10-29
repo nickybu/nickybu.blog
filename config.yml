@@ -2,7 +2,7 @@ baseURL: https://nickybu.blog
 languageCode: en-uk
 title: Nicky Buttigieg
 theme: "PaperMod"
-paginate: 5
+paginate: 15
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -15,12 +15,14 @@ minify:
 
 enableEmoji: true
 
+taxonomies:
+  tag: tags
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Nicky Buttigieg
   description: "A personal blog belonging to Nicky Buttigieg"
   keywords: [blog, nickybu, PaperMod]
-  author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -33,6 +35,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
+  ShowFullTextinRSS: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -85,30 +88,66 @@ params:
     URL: "https://github.com/nickybu/nickybu.github.io/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
+  
+  # search
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
     location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
+    distance: 500
+    threshold: 0.5
+    minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+      params:
+        class: highlight-menu-item
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
+      weight: 30
     - identifier: bookshelf
       name: bookshelf
       url: /bookshelf/
-      weight: 10
+      weight: 20
+    - identifier: rss
+      name: rss
+      pre: <i class='fa fa-rss'></i>
+      url: /index.xml
+      target: _blank
+      weight: 40
+    - identifier: search
+      name: search
+      pre: <i class='fa fa-search'></i>
+      url: /search/
+      weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true # <- this enables HTML rendering
+      xhtml: false
   highlight:
     noClasses: false
     # anchorLineNos: true

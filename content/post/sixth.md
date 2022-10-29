@@ -3,9 +3,8 @@ title: "My 1st post"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-summary: 
-slug: 
 tags: ["first"]
+summary: This is a test summary.
 showToc: false
 TocOpen: false
 hidemeta: false
@@ -31,3 +30,4 @@ editPost:
     appendFilePath: true
 ---
 
+This is content

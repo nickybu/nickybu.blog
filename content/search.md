@@ -1,9 +1,9 @@
 ---
-title: "Search"
+title: "search"
 layout: "search"
-url: "/search"
-description: "Description for Search"
+url: "/search/"
+description: "search through blog post titles & content"
 summary: "search"
-placeholder: "placeholder text in search input box"
+placeholder: "..."
 ---
 
