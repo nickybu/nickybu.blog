@@ -1,6 +1,6 @@
 baseURL: https://nickybu.blog
 languageCode: en-uk
-title: nickybu
+title: Nicky Buttigieg
 theme: "PaperMod"
 paginate: 5
 
@@ -13,11 +13,13 @@ minify:
   disableXML: true
   minifyOutput: true
 
+enableEmoji: true
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: nickybu's blog
+  title: Nicky Buttigieg
   description: "A personal blog belonging to Nicky Buttigieg"
-  keywords: [Blog, nickybu, PaperMod]
+  keywords: [blog, nickybu, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -57,16 +59,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Hi, I'm Nicky 👋🏻"
+    Content: 
 
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://twitter.com/nickybu_"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/nickybu"
 
   analytics:
     google:
@@ -82,7 +82,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/nickybu/nickybu.github.io/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -98,10 +98,6 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
     - identifier: tags
       name: tags
       url: /tags/
@@ -109,7 +105,7 @@ menu:
     - identifier: bookshelf
       name: bookshelf
       url: /bookshelf/
-      weight: 30
+      weight: 10
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -125,3 +121,27 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: false
+    disable: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
