@@ -1,6 +1,6 @@
 # bookshelf
 
-Some of my favourite books & graphic novels. Inspired by [Nick Cammarata’s](http://nickcammarata.com/bookshelf) and [Visa Kanv’s](http://visakanv.com/bookshelf/) bookshelves. You can also follow me on [goodreads](https://www.goodreads.com/user/show/75434680-nicky).
+Some of my favourite books & graphic novels. Inspired by [Nick Cammarata’s](http://nickcammarata.com/bookshelf) and [Visa Kanv’s](http://visakanv.com/bookshelf/) bookshelves. You can also follow me on [goodreads](https://www.goodreads.com/nickybu).
 
 ---
 

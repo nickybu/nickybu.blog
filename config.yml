@@ -5,7 +5,7 @@ theme: "PaperMod"
 paginate: 15
 
 enableRobotsTXT: true
-buildDrafts: false
+buildDrafts: true
 buildFuture: false
 buildExpired: false
 
@@ -49,28 +49,28 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.png"
+    favicon16x16: "/favicon_16.png"
+    favicon32x32: "/favicon_32.png"
+    apple_touch_icon: "/favicon.png"
+    safari_pinned_tab: "/favicon.png"
 
   label:
     text: "Nicky Buttigieg"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+    icon:
+    iconHeight: 0
 
   # home-info mode
   homeInfoParams:
     Title: "Hi, I'm Nicky 👋🏻"
-    Content: 
+    Content: Oh hi this is a sample intro to see how the padding looks between this section and my posts. 
 
   socialIcons:
     - name: twitter
       url: "https://twitter.com/nickybu_"
     - name: github
       url: "https://github.com/nickybu"
-
+    - name:
   analytics:
     google:
       SiteVerificationTag: "XYZabc"
@@ -98,14 +98,13 @@ params:
     threshold: 0.5
     minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
     - identifier: about
       name: about
       url: /about/
       weight: 10
-      params:
-        class: highlight-menu-item
     - identifier: tags
       name: tags
       url: /tags/

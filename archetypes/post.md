@@ -1,10 +1,10 @@
 ---
-title: "My 1st post"
-date: 2020-09-15T11:30:03+00:00
+title: My 1st post
+date: {{.Date}}
 # weight: 1
-# aliases: ["/first"]
 summary: 
-slug: 
+slug:
+draft: false
 tags: ["first"]
 showToc: false
 TocOpen: false
