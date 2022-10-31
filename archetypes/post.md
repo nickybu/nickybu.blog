@@ -20,13 +20,13 @@ ShowPostNavLinks: true
 ShowWordCount: false
 UseHugoToc: true
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "posts/"
+    alt: "<alt text>"
+    caption: "<text>"
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: true
 editPost:
-    URL: "https://github.com/nickybu/nickybu.github.io/content"
+    URL: "https://github.com/nickybu/nickybu.blog/content"
     Text: "suggest changes"
     appendFilePath: true
 ---
