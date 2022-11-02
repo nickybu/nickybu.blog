@@ -116,7 +116,7 @@ menu:
     - identifier: rss
       name: rss
       pre: <i class='fa fa-rss'></i>
-      url: /index.xml
+      url: /rss/
       target: _blank
       weight: 40
     - identifier: search
